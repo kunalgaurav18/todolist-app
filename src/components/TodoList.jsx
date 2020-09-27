@@ -9,6 +9,7 @@ function TodoList(props) {
     return (
       <>
         <h4>Todo List</h4>
+        <p><b>Note:</b> Data will be lost on page refresh.</p>
         {props.taskList.map(t => (
           <div key={t.id}>
             <input type="checkbox" onClick={() => completeTask(t.id)} />
